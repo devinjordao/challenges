@@ -22,7 +22,7 @@ class Image
       @image[row-1][col] = 1 unless row == 0
       @image[row+1][col] = 1 unless row == @image.length-1
       @image[row][col-1] = 1 unless col == 0
-      @image[row][col+1] = 1 unless col == @image.length-1
+      @image[row][col+1] = 1 unless col == @image[row].length-1
     end
   end
 end
